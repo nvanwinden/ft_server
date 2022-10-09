@@ -6,13 +6,13 @@
 #    By: nvan-win <nvan-win@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/11/29 09:58:17 by nvan-win      #+#    #+#                  #
-#    Updated: 2020/11/29 14:07:53 by nvan-win      ########   odam.nl          #
+#    Updated: 2022/10/09 11:35:48 by nvan-win      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 FROM	debian:buster
 
-LABEL	maintainer="Nina van Winden <nvan-win@student.codam.nl>"
+LABEL	maintainer="Nilo van Winden <nvan-win@student.codam.nl>"
 
 RUN		apt update; \
 		apt upgrade -y;
