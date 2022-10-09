@@ -1,7 +1,6 @@
 # ft_server :whale:
 
 **Codam [42 Network] project**: set up a web server with **Nginx** in a single **Docker** container.
-This project is intented to introduce you to the basics of **system and network administration** 
 
 __Project requirements__:
  - The container OS must be Debian Buster.
