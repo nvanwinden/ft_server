@@ -1,14 +1,21 @@
 # ft_server :whale:
 
-*Codam [42 Network] project*: set up a web server with **Nginx** in a single **Docker** container.
+**Codam [42 Network] project**: set up a web server with **Nginx** in a single **Docker** container.
+This project is intented to introduce you to the basics of **system and network administration** 
 
-<u>Project requirements</u>:
+__Project requirements__:
  - The container OS must be Debian Buster.
  - The web server must be able to run **several services** at the same time. These services will be a **WordPress** website, **phpMyAdmin** and **MySQL**. The SQL database should work with WordPress and phpMyAdmin.
  - The server should be able to use the **SSL protocol** and redirect to the correct website (http to https).
  - The server is running with an **autoindex** that must be able to be disabled.
- 
- ## Instructions :wrench:
+
+__Skills__:
+- System and network administration
+- Rigor
+
+[Read the full subject](https://github.com/nvanwinden/ft_server/blob/master/en.subject.pdf).
+
+## Instructions :clipboard:
 
 ### Clone repo
 `git clone https://github.com/nvanwinden/ft_server.git`
@@ -39,7 +46,7 @@
 ├── Dockerfile
 ```
 
-## Basic tests
+## Basic tests :test_tube:
 
 ### Wordpress website
 
@@ -70,7 +77,7 @@ Any HTTP request coming in at port 80 is redirected to port 443.
 ### Autoindex
 Autoindex is enabled by default. This can be verified by visiting https://localhost/wp-includes/ after running the container. The directory listing should be visible in your browser.  To disable autoindex, simply run the following command `docker exec -it ft_server /bin/bash ./autoindex.sh off`. This will execute the autoindex.sh script in the container root.
 
-## Useful Docker commands
+## Useful Docker commands :keyboard:
 
 | Command | Description |
 |--|--|
@@ -87,7 +94,7 @@ Autoindex is enabled by default. This can be verified by visiting https://localh
 <details>
 <summary>Notes Dockerfile</summary>
 
-## Notes Dockerfile
+## Notes Dockerfile :notebook:
 
 `FROM  debian:buster`
 `FROM` must be the first instruction in a Dockerfile and specifies the underlying OS architecture that you're using to build the image.
@@ -208,7 +215,7 @@ Starting  services.
 <details>
 <summary>Notes nginx.conf</summary>
 
-## Notes nginx.conf
+## Notes nginx.conf :notebook:
 
 A **server block** is a subset of Nginx’s configuration that defines a virtual server used to handle requests of a defined type. Administrators often configure multiple server blocks and decide which block should handle which connection based on the requested domain name, port, and IP address.
 ```
