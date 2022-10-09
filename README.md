@@ -44,6 +44,8 @@ __Skills__:
 │   ├── config.inc.php
 │   ├── nginx.conf
 ├── Dockerfile
+├── en.subject.pdf
+├── README.md
 ```
 
 ## Basic tests :test_tube:
@@ -92,9 +94,9 @@ Autoindex is enabled by default. This can be verified by visiting https://localh
 | `docker exec -it [container name] bash` | run a command in a running container
 
 <details>
-<summary>Notes Dockerfile</summary>
+<summary>Notes Dockerfile :notebook:</summary>
 
-## Notes Dockerfile :notebook:
+## Notes Dockerfile
 
 `FROM  debian:buster`
 `FROM` must be the first instruction in a Dockerfile and specifies the underlying OS architecture that you're using to build the image.
@@ -213,9 +215,9 @@ Starting  services.
 
 
 <details>
-<summary>Notes nginx.conf</summary>
+<summary>Notes nginx.conf :notebook:</summary>
 
-## Notes nginx.conf :notebook:
+## Notes nginx.conf
 
 A **server block** is a subset of Nginx’s configuration that defines a virtual server used to handle requests of a defined type. Administrators often configure multiple server blocks and decide which block should handle which connection based on the requested domain name, port, and IP address.
 ```
