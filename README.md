@@ -56,16 +56,16 @@ __Skills__:
 Wordpress is installed in the default document root of Nginx and the installation process is handled by WP-CLI.
 
 ### Wordpress admin dashboard
-> https://localhost/wp-admin
-> Username: wpuser
+> https://localhost/wp-admin<br>
+> Username: wpuser<br>
 > Password: password
 
 You can add pages, create new users, upload files, add posts, etc.
 By default, Nginx has a limit of 1mb on file uploads. In the Nginx config file the limit size for file uploads is increased to 20mb to support high res (4k images).
 
 ### phpMyAdmin
-> https://localhost/phpmyadmin/
-> Username: dbuser
+> https://localhost/phpmyadmin/<br>
+> Username: dbuser<br>
 > Password: password
 
 To check if the SQL database is configured properly, your new pages, users, uploads and posts should all be visible in phpMyAdmin.
